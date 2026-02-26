@@ -5,3 +5,4 @@ function ragaca() {
   const num2 = document.querySelector("num2").value;
   result.innerHTML = num1 + num2;
 }
+
