@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="average(event)">
+      <label> A score</label>
+      <input type="number" id="A" />
+
+      <label>B score</label>
+      <input type="number" id="B" />
+
+      <button type="submit">calculate average</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+      function average(event) {
+        event.preventDefault();
+        let A = Number(document.getElementById("A").value);
+        let B = Number(document.getElementById("B").value);
+        let average = (A + B) / 2;
+        document.getElementById("result").innerHTML = +average;
+      }
+    </script>
+  </body>
+</html>

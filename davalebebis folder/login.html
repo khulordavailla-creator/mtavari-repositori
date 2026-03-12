@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="login(event)">
+      <label>username</label>
+      <input type="text" id="username" />
+
+      <label>password</label>
+      <input type="password" id="password" />
+
+      <button type="submit">log in</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+      function login(event) {
+        event.preventDefault();
+
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        let result = document.getElementById("result");
+
+        if (username.length < 4) {
+          result.style.color = "red";
+          result.innerHTML = "username-ის სიგრძე უნდა იყოს მინიმუმ 4 ";
+        } else if (password.length < 6) {
+          result.style.color = "red";
+          result.innerHTML = " password-ის სიგრძე უნდა იყოს მინიმუმ 6";
+        } else {
+          result.style.color = "green";
+          result.innerHTML = "წარამტებით შეხვედით ";
+        }
+      }
+    </script>
+  </body>
+</html>

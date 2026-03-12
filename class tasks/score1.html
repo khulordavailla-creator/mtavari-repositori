@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>document</title>
+  </head>
+  <body>
+    <form onsubmit="calculateAverage(event)">
+      <label>Student Name:</label><br />
+      <input type="text" id="name" /><br /><br />
+
+      <label>Math Score:</label><br />
+      <input type="number" id="math" /><br /><br />
+
+      <label>English Score:</label><br />
+      <input type="number" id="english" /><br /><br />
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateAverage(event) {
+          event.preventDefault();
+          let name = document.querySelector("form");
+
+          let average = (math + english) / 2;
+
+          document.getElementById("result").innerHTML =
+            "Student: " + name + "Average: " + average;
+        }
+
+
+      შევიყვანოთ 0-100 50 ზე მეტი ჩააბარე 50 ნაკლები ჩააბარე
+
+        შექმნა ა და ბ ელემენტი და გამობიტანო იმათი ჯამი ან საშუალო
+    </script>
+  </body>
+</html>

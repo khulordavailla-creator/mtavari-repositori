@@ -6,23 +6,21 @@
     <title>Document</title>
   </head>
   <body>
-    <form onsubmit="ragaca(event)">
+    <form onsubmit="rame(event)">
       <label>enter your score</label>
       <input type="number" id="score" />
       <button type="submit">submit</button>
     </form>
-
     <p id="result"></p>
 
     <script>
-      function ragaca(event) {
+      function rame(event) {
         event.preventDefault();
-
-        let number = Number(document.getElementById("score").value);
+        let number = document.getElementById("score").value;
         let result = document.getElementById("result");
 
         if (number > 100 || number < 0) {
-          result.innerHTML = "incorrect number";
+          result.innerHTML = "incorrect numbre";
         } else if (number >= 50) {
           result.innerHTML = "you passed";
         } else {
