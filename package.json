@@ -1,0 +1,21 @@
+{
+  "name": "mtavari-repositori",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khulordavailla-creator/mtavari-repositori.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/khulordavailla-creator/mtavari-repositori/issues"
+  },
+  "homepage": "https://github.com/khulordavailla-creator/mtavari-repositori#readme"
+}

@@ -1,10 +1,5 @@
-const names = ["nikolozi", "saba", "ilo"];
+const parentbox = document.querySelector(`.parent-box`);
+const littlebox = document.createElement("div");
+console.log(littlebox);
 
-const userInput = prompt["chaweret saxeli"];
-
-if (names.includes(userInput)) {
-  alert("your welcome");
-} else {
-  names.push(userInput);
-  alert("acc is created");
-}
+parentbox.addEventListener("")

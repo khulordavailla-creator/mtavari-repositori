@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title>document</title>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #text {
+        margin-top: 20px;
+        font-size: 24px;
+        color: black;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="showText()">click me</button>
+
+    <div id="text">Hello World</div>
+
+    <script>
+      function showText() {
+        document.getElementById("text").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
