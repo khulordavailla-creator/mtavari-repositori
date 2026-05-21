@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/khulordavailla-creator/mtavari-repositori/issues"
   },
-  "homepage": "https://github.com/khulordavailla-creator/mtavari-repositori#readme"
+  "homepage": "https://github.com/khulordavailla-creator/mtavari-repositori#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
 }
